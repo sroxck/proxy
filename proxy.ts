@@ -6,7 +6,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 import serveStatic  from 'serve-static'
 import history  from 'connect-history-api-fallback'
-
 import { createProxyMiddleware } from 'http-proxy-middleware'
 // 使用__dirname来获取当前模块的目录路径
 const app = express();
@@ -67,6 +66,7 @@ app.use(
     },
   })
 );
+
 
 app.get('/dir', (req, res) => {
   // 读取根目录下的文件和文件夹

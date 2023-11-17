@@ -11,7 +11,6 @@ export function proxyHandle(program) {
     // 将配置对象转为yaml格式,写入文件
     const config = parseToYaml(yamConfig)
     const dirPath = path.join(cwd(), target || '');
-    console.log(dirPath,'dirPath')
     // 路径存在并且是文件夹
     if (!checkPathExist(dirPath)) return proxyLog.error('目录不存在')
     if (checkIsDir(dirPath)) {
