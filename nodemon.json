@@ -1,0 +1,8 @@
+{
+  "watch": ["./proxy.ts"],
+  "ext": ".ts",
+  "exec": "tsx ./proxy.ts",
+  "events": {
+    "restart": "echo 程序已经重新启动"
+  }
+}

@@ -1,0 +1,5 @@
+proxy:
+  host: localhost
+  port: 9000
+  apiPrefix: /cebp-admin/
+  target: https://dev-cebp.boyachain.cn/
