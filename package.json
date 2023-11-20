@@ -1,7 +1,7 @@
 {
-  "name": "p",
+  "name": "proxy-static-server",
   "version": "1.0.0",
-  "description": "222",
+  "description": "proxy-static-server是一个本地静态文件代理的cli工具,通常用于 vue 项目打包后产生的静态文件即 dist 目录的代理工作,可以快捷简单的代理目标目录到指定服务器",
   "main": "index.js",
   "type": "module",
   "bin": {

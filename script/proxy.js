@@ -19,7 +19,8 @@ export async function proxyHandle(program) {
     const target = program.args[0]
     if (!target) return proxyLog.error('请指定要代理的项目目录名称')
     if (checkPathExist(`${cwd()}/proxy.yml`)) {
-      isCreate = await isReWritePrompt()
+      // isCreate = await isReWritePrompt()
+      isCreate = false
     }
     if (isCreate) {
       const isUseDefault = await proxySelectPrompt()

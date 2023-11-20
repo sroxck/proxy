@@ -1,6 +1,6 @@
 proxy:
   host: localhost
   port: 9000
-  publicPath: ''
-  apiPrefix: cebp-api
-  target: https://dev-xxx.xxxxx.cn/
+  publicPath: /
+  apiPrefix: /api/
+  target: http://www.example.org

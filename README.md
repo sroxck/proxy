@@ -2,12 +2,12 @@
  * @Author: sroxck
  * @Date: 2023-11-17 15:23:46
  * @LastEditors: sroxck
- * @LastEditTime: 2023-11-20 16:33:27
+ * @LastEditTime: 2023-11-20 16:36:27
  * @Description: 
 -->
 
-# proxy-cli
-proxy-cli是一个本地静态文件代理工具,通常用于 `vue` 项目打包后产生的静态文件即 `dist` 目录的代理工作,可以快捷简单的代理目标目录到指定服务器
+# proxy-static-server
+proxy-static-server是一个本地静态文件代理的cli工具,通常用于 `vue` 项目打包后产生的静态文件即 `dist` 目录的代理工作,可以快捷简单的代理目标目录到指定服务器
 
 ![img](description.png)
 ## 安装
