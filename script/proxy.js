@@ -1,3 +1,10 @@
+/**
+ * @Author: sroxck
+ * @Date: 2023-11-17 14:22:00
+ * @LastEditors: sroxck
+ * @LastEditTime: 2023-11-17 18:00:52
+ * @Description:
+ */
 import path from "node:path"
 import { cwd } from "node:process"
 import { checkIsDir, checkPathExist, writeFileSync } from "./file.js"
