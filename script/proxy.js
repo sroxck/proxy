@@ -2,7 +2,7 @@
  * @Author: sroxck
  * @Date: 2023-11-17 14:22:00
  * @LastEditors: sroxck
- * @LastEditTime: 2023-11-17 18:00:52
+ * @LastEditTime: 2023-11-20 09:47:11
  * @Description:
  */
 import path from "node:path"
@@ -21,8 +21,10 @@ export function proxyHandle(program) {
     // 路径存在并且是文件夹
     if (!checkPathExist(dirPath)) return proxyLog.error('目录不存在')
     if (checkIsDir(dirPath)) {
-      // 创建一个proxy.yam文件
-      await writeFileSync(`${cwd()}/proxy.yml`, config)
+      // 先读取proxy.yam,如果不存在,则创建一个proxy.yam文件
+      if (!checkPathExist(`${cwd()}/proxy.yml`)) {
+        await writeFileSync(`${cwd()}/proxy.yml`, config)
+      }
       runProxy()
     }
   })
