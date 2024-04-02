@@ -28,3 +28,5 @@ npm i -g proxy-static-server
 
 ## Required
 NodeJs >= 18.0.0
+
+## 注意事项
